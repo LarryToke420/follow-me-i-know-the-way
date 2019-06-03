@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>For Madi</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/one-page-wonder.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">2nd time is the charm</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="messages.html">Tell & Keep</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Vacation Funder</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Time Scheduler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Drink Monitor</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white">
+    <div class="masthead-content">
+      <div class="container">
+        <h1 class="masthead-heading mb-0">The Mending Page</h1>
+        <h2 class="masthead-subheading mb-0">Making it work again</h2>
+        <a href="messages.html" class="btn btn-primary btn-xl rounded-pill mt-5">View Msg's</a>
+      </div>
+    </div>
+    <div class="bg-heart-1 "></div>
+
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <video width="495" height="300" style="max-width: 100%; height: auto;"class="rounded-circle" autoplay="true" loop="true" muted>
+              <source src="img\Couple Relaxing Near The Lake.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4"> Thoughts from the Other Side...</h2>
+            <p>Although we may be away from each other- its only fair to ourselves to have a portal to write our thoughts, and voice what we wish to say to each other. Write it here to display or choose to save it & wait to show until were on a better page.</p>
+          </div>
+        </div>
+        <div class="col-lg-12 order-lg-3">
+            <div class="p-5">
+              <div class="alert">Your message has been sent < 3 </div>
+              <h2>Write your message here and select who its to:</h2>
+                <form class="sucess-none" id="newMessage">
+                    <div class="inputs">
+                      <div class="form-group">
+                        <label for="title"></label>
+                        <input type="text" class="form-control" id="title" placeholder="Title:" style="width: 100%; float: left">
+                      </div>
+                      <div class="form-group">
+                          <label for="message"></label>
+                          <textarea class="form-control" id="message" placeholder="Message:" rows="3" style="width: 100%; float: left;"></textarea>
+                      </div>
+                      <div class="form-group" style="width: 35%; float: left; padding-left: 3%;">
+                          <div class="form-check">
+                              <input class="form-check-input" type="radio" name="RadioButton" id="madi" value="madi" onclick="isToMadi();">
+                              <label class="form-check-label" for="madi">To Madi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="RadioButton" id="mitchell" value="mitchell" onclick="isToMitchell();">
+                                <label class="form-check-label" for="mitchell">To Mitchell</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="hidden" id="hidden" value="Hide Msg" onclick="validate();">
+                                <label class="form-check-label" for="hidden">Add this msg to a database than cant be viewed</label>
+                            </div>
+                      </div>
+                      <div class="form-group">
+                          <input type="date" value="" name="DATE" class="required date" id="date" placeholder="06/19/2019" style=" width: 100%; float: left; background: none; padding: 1.75em 2em; margin: 0; box-shadow: none; border: 2px black;">
+                      </div>
+
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                        <input type="text" name="b_96d9e6e519173af7bdbdab9d_23138bd741" tabindex="-1" value="">
+                    </div>
+                    <button type="submit" class="btn btn-success" value="Submit" name="subscribe" id="submitMessage" style="width: 100%;">Submit</button>
+                  </form>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/05.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">Vacation Funder!</h2>
+            <p>The plan for this part of the website is to link a paypal account up to a button which automatically sends the amount of money we made from a shift that we werent supposed to work. For example- if one of us misses a party were supposed to attend together- because of a work conflict; then the $ earned will transfer to the joint acc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="img/04.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Scheduler V1.0 Ability to plan ahead</h2>
+            <p>I found out how to connect my HotSchedules application up to this website- so therefore I can pair up that schedule to a schedule which is hosted on this website. It'll then instantly notify you when my schedule is posted and will help with the problem we had; of not planning ahead.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; Mitchell LaBenski</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script> 
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/ade6c950e9.js"></script>
+
+
+</body>
+
+</html>
