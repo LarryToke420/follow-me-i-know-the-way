@@ -42,8 +42,7 @@
         "gulp-plumber": "^1.2.1",
         "gulp-rename": "1.4.0",
         "gulp-sass": "4.0.2",
-        "merge-stream": "2.0.0",
-        https://www.sitepoint.com/deploying-heroku-using-gulp-node-git/
+        "merge-stream": "2.0.0"
     },
     "devDependencies": {
         "browser-sync": "2.26.5",
